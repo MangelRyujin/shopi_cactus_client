@@ -38,6 +38,7 @@ BASE_APPS = [
 ]
 
 LOCAL_APPS = [
+    'apps.client',
 ]
 
 THIRD_APPS = [
@@ -110,7 +111,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+AUTH_USER_MODEL = 'client.User'
 
 
 # Default primary key field type

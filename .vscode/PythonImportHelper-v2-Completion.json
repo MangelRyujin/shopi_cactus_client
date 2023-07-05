@@ -1,5 +1,29 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -24,11 +48,19 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
         "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -98,12 +130,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "apps.client.migrations.0001_initial",
+        "description": "apps.client.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('password', models.CharField(max_length=128, verbose_name='password')),",
+        "detail": "apps.client.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
         "label": "ClientConfig",
         "kind": 6,
         "importPath": "apps.client.apps",
         "description": "apps.client.apps",
-        "peekOfCode": "class ClientConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'client'",
+        "peekOfCode": "class ClientConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'apps.client'",
         "detail": "apps.client.apps",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "apps.client.models",
+        "description": "apps.client.models",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    def _create_user(self, username, email, first_name, last_name, password, is_staff, **extra_fields):\n        user = self.model(\n            username = username,\n            email = email,\n            first_name = first_name,\n            last_name = last_name,\n            is_staff = is_staff,\n            **extra_fields\n        )",
+        "detail": "apps.client.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "apps.client.models",
+        "description": "apps.client.models",
+        "peekOfCode": "class User(AbstractBaseUser):\n    username = models.CharField(max_length=255, unique=True)\n    email = models.EmailField('Correo Electrónico', max_length=255 , unique=True, blank = False, null= False)\n    first_name = models.CharField('Nombre', max_length=255, blank=True, null=True)\n    last_name = models.CharField('Apellidos', max_length=255, blank=True, null=True)\n    is_staff = models.BooleanField(default=True)\n    objects = UserManager()\n    class Meta:    \n        verbose_name = 'User'\n        verbose_name_plural = 'Users'",
+        "detail": "apps.client.models",
         "documentation": {}
     },
     {
@@ -129,7 +188,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "BASE_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nLOCAL_APPS = [\n]",
+        "peekOfCode": "BASE_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n]\nLOCAL_APPS = [\n    'apps.client',",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -138,7 +197,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "LOCAL_APPS = [\n]\nTHIRD_APPS = [\n    'rest_framework',\n]\nINSTALLED_APPS = BASE_APPS+ LOCAL_APPS + THIRD_APPS\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',",
+        "peekOfCode": "LOCAL_APPS = [\n    'apps.client',\n]\nTHIRD_APPS = [\n    'rest_framework',\n]\nINSTALLED_APPS = BASE_APPS+ LOCAL_APPS + THIRD_APPS\nMIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -210,7 +269,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -219,7 +278,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -228,7 +287,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -237,7 +296,16 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "USE_TZ = True\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "shopi_cactus_client.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "shopi_cactus_client.settings.base",
+        "description": "shopi_cactus_client.settings.base",
+        "peekOfCode": "AUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
