@@ -1,5 +1,109 @@
 [
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "apps.client.models",
+        "description": "apps.client.models",
+        "isExtraImport": true,
+        "detail": "apps.client.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "apps.client.models",
+        "description": "apps.client.models",
+        "isExtraImport": true,
+        "detail": "apps.client.models",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "List_ClientSerializer",
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "isExtraImport": true,
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Create_ClientSerializer",
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "isExtraImport": true,
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "list_client_api_view",
+        "importPath": "apps.client.api.views.client_views",
+        "description": "apps.client.api.views.client_views",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.client_views",
+        "documentation": {}
+    },
+    {
+        "label": "create_client_api_view",
+        "importPath": "apps.client.api.views.client_views",
+        "description": "apps.client.api.views.client_views",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.client_views",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -105,14 +209,6 @@
         "documentation": {}
     },
     {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -127,6 +223,51 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Create_ClientSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class Create_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = '__all__'\n    def create(self, validated_data):\n        user = User(**validated_data)\n        user.set_password(validated_data['password'])\n        user.save()\n        return user\nclass List_ClientSerializer(serializers.ModelSerializer):",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "List_ClientSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class List_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = ('id','username', 'first_name','last_name','email','password')\n        def to_representation(self, instance):\n            return {\n            'id':instance['id'],\n            'username':instance['username'],\n            'first_name':instance['first_name'],\n            'last_name':instance['last_name'],",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "list_client_api_view",
+        "kind": 2,
+        "importPath": "apps.client.api.views.client_views",
+        "description": "apps.client.api.views.client_views",
+        "peekOfCode": "def list_client_api_view(request):\n    # list\n    if request.method == 'GET':\n        user = User.objects.all().values('id', 'first_name' ,'last_name' ,'username','email','password')\n        if user.exists():\n            user_serializer = List_ClientSerializer(user, many = True)\n            return Response(user_serializer.data, status= status.HTTP_200_OK)\n        return Response({'message':\"Clients don't exist\"},status=status.HTTP_404_NOT_FOUND)\n@api_view(['POST'])\ndef create_client_api_view(request):   ",
+        "detail": "apps.client.api.views.client_views",
+        "documentation": {}
+    },
+    {
+        "label": "create_client_api_view",
+        "kind": 2,
+        "importPath": "apps.client.api.views.client_views",
+        "description": "apps.client.api.views.client_views",
+        "peekOfCode": "def create_client_api_view(request):   \n    # create\n    if request.method == 'POST':\n        user_serializer = Create_ClientSerializer(data = request.data)\n        if user_serializer.is_valid():\n            user_serializer.save()\n            return Response({'message':'Successful registration'}, status= status.HTTP_201_CREATED)\n        return Response(user_serializer.errors, status = status.HTTP_400_BAD_REQUEST)",
+        "detail": "apps.client.api.views.client_views",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.client.api.urls",
+        "description": "apps.client.api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('clients/', list_client_api_view, name = 'clients' ),\n    path('register/', create_client_api_view, name ='register'),\n]",
+        "detail": "apps.client.api.urls",
         "documentation": {}
     },
     {
@@ -404,7 +545,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.urls",
         "description": "shopi_cactus_client.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('clients/', include('apps.client.api.urls')),\n]",
         "detail": "shopi_cactus_client.urls",
         "documentation": {}
     },
