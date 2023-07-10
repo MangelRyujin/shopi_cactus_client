@@ -16,6 +16,14 @@
         "documentation": {}
     },
     {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "apps.client.models",
         "description": "apps.client.models",
@@ -259,6 +267,15 @@
         "description": "apps.client.api.views.client_views",
         "peekOfCode": "def create_client_api_view(request):   \n    # create\n    if request.method == 'POST':\n        user_serializer = Create_ClientSerializer(data = request.data)\n        if user_serializer.is_valid():\n            user_serializer.save()\n            return Response({'message':'Successful registration'}, status= status.HTTP_201_CREATED)\n        return Response(user_serializer.errors, status = status.HTTP_400_BAD_REQUEST)",
         "detail": "apps.client.api.views.client_views",
+        "documentation": {}
+    },
+    {
+        "label": "PlantsViewSet",
+        "kind": 6,
+        "importPath": "apps.client.api.views.plants_viewset",
+        "description": "apps.client.api.views.plants_viewset",
+        "peekOfCode": "class PlantsViewSet(viewsets.GenericViewSet):\n    pass",
+        "detail": "apps.client.api.views.plants_viewset",
         "documentation": {}
     },
     {

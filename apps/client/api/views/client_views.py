@@ -30,3 +30,4 @@ def create_client_api_view(request):
             user_serializer.save()
             return Response({'message':'Successful registration'}, status= status.HTTP_201_CREATED)
         return Response(user_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
+    
