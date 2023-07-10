@@ -118,3 +118,5 @@ AUTH_USER_MODEL = 'client.User'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CARRO_SESSION_ID = 'car'

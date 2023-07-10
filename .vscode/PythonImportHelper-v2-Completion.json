@@ -8,6 +8,22 @@
         "documentation": {}
     },
     {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -24,6 +40,30 @@
         "documentation": {}
     },
     {
+        "label": "viewsets",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "User",
         "importPath": "apps.client.models",
         "description": "apps.client.models",
@@ -37,6 +77,71 @@
         "description": "apps.client.models",
         "isExtraImport": true,
         "detail": "apps.client.models",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "importPath": "apps.client.shopi_cart.cart",
+        "description": "apps.client.shopi_cart.cart",
+        "isExtraImport": true,
+        "detail": "apps.client.shopi_cart.cart",
+        "documentation": {}
+    },
+    {
+        "label": "action",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "action",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
         "documentation": {}
     },
     {
@@ -45,6 +150,62 @@
         "description": "rest_framework.decorators",
         "isExtraImport": true,
         "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "detail_plant",
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "list_plants",
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "detail_plant",
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "List_ClientSerializer",
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "isExtraImport": true,
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Password_SetSerializer",
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "isExtraImport": true,
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateClientSerializer",
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "isExtraImport": true,
+        "detail": "apps.client.api.serializers.client_serializers",
         "documentation": {}
     },
     {
@@ -64,11 +225,27 @@
         "documentation": {}
     },
     {
-        "label": "Response",
-        "importPath": "rest_framework.response",
-        "description": "rest_framework.response",
+        "label": "DefaultRouter",
+        "importPath": "rest_framework.routers",
+        "description": "rest_framework.routers",
         "isExtraImport": true,
-        "detail": "rest_framework.response",
+        "detail": "rest_framework.routers",
+        "documentation": {}
+    },
+    {
+        "label": "CarViewSet",
+        "importPath": "apps.client.api.views.cart_viewset",
+        "description": "apps.client.api.views.cart_viewset",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.cart_viewset",
+        "documentation": {}
+    },
+    {
+        "label": "ClientViewSet",
+        "importPath": "apps.client.api.views.client_viewset",
+        "description": "apps.client.api.views.client_viewset",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.client_viewset",
         "documentation": {}
     },
     {
@@ -96,19 +273,27 @@
         "documentation": {}
     },
     {
-        "label": "list_client_api_view",
-        "importPath": "apps.client.api.views.client_views",
-        "description": "apps.client.api.views.client_views",
+        "label": "create_client_api_view",
+        "importPath": "apps.client.api.views.register_views",
+        "description": "apps.client.api.views.register_views",
         "isExtraImport": true,
-        "detail": "apps.client.api.views.client_views",
+        "detail": "apps.client.api.views.register_views",
         "documentation": {}
     },
     {
-        "label": "create_client_api_view",
-        "importPath": "apps.client.api.views.client_views",
-        "description": "apps.client.api.views.client_views",
+        "label": "view_plant_api_view",
+        "importPath": "apps.client.api.views.plants_views",
+        "description": "apps.client.api.views.plants_views",
         "isExtraImport": true,
-        "detail": "apps.client.api.views.client_views",
+        "detail": "apps.client.api.views.plants_views",
+        "documentation": {}
+    },
+    {
+        "label": "list_plants_api_view",
+        "importPath": "apps.client.api.views.plants_views",
+        "description": "apps.client.api.views.plants_views",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.plants_views",
         "documentation": {}
     },
     {
@@ -133,6 +318,22 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "CARRO_SESSION_ID",
+        "importPath": "shopi_cactus_client.settings.base",
+        "description": "shopi_cactus_client.settings.base",
+        "isExtraImport": true,
+        "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
     {
@@ -234,48 +435,165 @@
         "documentation": {}
     },
     {
-        "label": "Create_ClientSerializer",
-        "kind": 6,
-        "importPath": "apps.client.api.serializers.client_serializers",
-        "description": "apps.client.api.serializers.client_serializers",
-        "peekOfCode": "class Create_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = '__all__'\n    def create(self, validated_data):\n        user = User(**validated_data)\n        user.set_password(validated_data['password'])\n        user.save()\n        return user\nclass List_ClientSerializer(serializers.ModelSerializer):",
-        "detail": "apps.client.api.serializers.client_serializers",
-        "documentation": {}
-    },
-    {
         "label": "List_ClientSerializer",
         "kind": 6,
         "importPath": "apps.client.api.serializers.client_serializers",
         "description": "apps.client.api.serializers.client_serializers",
-        "peekOfCode": "class List_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = ('id','username', 'first_name','last_name','email','password')\n        def to_representation(self, instance):\n            return {\n            'id':instance['id'],\n            'username':instance['username'],\n            'first_name':instance['first_name'],\n            'last_name':instance['last_name'],",
+        "peekOfCode": "class List_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = ('id','username', 'first_name','last_name','email')\n        def to_representation(self, instance):\n            return {\n            'id':instance['id'],\n            'username':instance['username'],\n            'first_name':instance['first_name'],\n            'last_name':instance['last_name'],",
         "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ClientDetailSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class ClientDetailSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = ('id','first_name','last_name','email','username')\nclass Create_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = '__all__'\n    def create(self, validated_data):\n        user = User(**validated_data)",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Create_ClientSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class Create_ClientSerializer(serializers.ModelSerializer):\n    class Meta:\n        model= User\n        fields = '__all__'\n    def create(self, validated_data):\n        user = User(**validated_data)\n        user.set_password(validated_data['password'])\n        user.save()\n        return user\nclass UpdateClientSerializer(serializers.ModelSerializer):",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateClientSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class UpdateClientSerializer(serializers.ModelSerializer):\n    class Meta: \n        model = User\n        fields = ('username','email','first_name','last_name')\nclass Password_SetSerializer(serializers.Serializer):\n    password = serializers.CharField(max_length =128,min_length =8, write_only = True)\n    password2 = serializers.CharField(max_length =128,min_length =8, write_only = True)\n    def validate(self,data):\n        if data['password'] != data['password2']:\n            raise serializers.ValidationError({'password':'Las contraseñas son incorrectas'})",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "Password_SetSerializer",
+        "kind": 6,
+        "importPath": "apps.client.api.serializers.client_serializers",
+        "description": "apps.client.api.serializers.client_serializers",
+        "peekOfCode": "class Password_SetSerializer(serializers.Serializer):\n    password = serializers.CharField(max_length =128,min_length =8, write_only = True)\n    password2 = serializers.CharField(max_length =128,min_length =8, write_only = True)\n    def validate(self,data):\n        if data['password'] != data['password2']:\n            raise serializers.ValidationError({'password':'Las contraseñas son incorrectas'})\n        return data",
+        "detail": "apps.client.api.serializers.client_serializers",
+        "documentation": {}
+    },
+    {
+        "label": "url_image",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "peekOfCode": "def url_image(url):\n    url_image = f'https://shopi-plants-admin.onrender.com{url}'\n    return url_image\ndef image(plant):\n    for key in plant.keys():\n        if key == 'image':\n            plant[key] = url_image(plant[key])\n    return plant\ndef list_image(plants):\n    for p in plants:",
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "peekOfCode": "def image(plant):\n    for key in plant.keys():\n        if key == 'image':\n            plant[key] = url_image(plant[key])\n    return plant\ndef list_image(plants):\n    for p in plants:\n        image(p)\n    return plants\ndef list_plants():",
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "list_image",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "peekOfCode": "def list_image(plants):\n    for p in plants:\n        image(p)\n    return plants\ndef list_plants():\n    url = 'https://shopi-plants-admin.onrender.com/plants/plants/'\n    response = requests.get(url)\n    data = response.json()\n    if response.status_code == 200:\n        data = list_image(response.json())",
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "list_plants",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "peekOfCode": "def list_plants():\n    url = 'https://shopi-plants-admin.onrender.com/plants/plants/'\n    response = requests.get(url)\n    data = response.json()\n    if response.status_code == 200:\n        data = list_image(response.json())\n        return data,response.status_code\n    else:\n        return data,response.status_code\ndef detail_plant(pk = None):",
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "detail_plant",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.plants_requests",
+        "description": "apps.client.api.views.requests.plants_requests",
+        "peekOfCode": "def detail_plant(pk = None):\n    url = f'https://shopi-plants-admin.onrender.com/plants/plants/{pk}/'\n    response = requests.get(url)\n    data = response.json()\n    if response.status_code == 200:\n        data = response.json()\n        data = image(data)\n        return data,response.status_code\n    else:\n        return data,response.status_code",
+        "detail": "apps.client.api.views.requests.plants_requests",
+        "documentation": {}
+    },
+    {
+        "label": "CarViewSet",
+        "kind": 6,
+        "importPath": "apps.client.api.views.cart_viewset",
+        "description": "apps.client.api.views.cart_viewset",
+        "peekOfCode": "class CarViewSet(viewsets.GenericViewSet):\n    # detail car\n    def list(self,request,*args,**kargs):\n        car = Car(request)\n        if car:\n            return Response({'order_items':car.car.values(),'qty_plants':car.qty_plants(self),'cost_car':car.cost_car(self)},status=status.HTTP_200_OK)\n        return Response({'order_items':[]},status=status.HTTP_200_OK)\n    @action(detail = False, methods = ['get'])\n    def add_car(self,request):\n        car = Car(request)",
+        "detail": "apps.client.api.views.cart_viewset",
+        "documentation": {}
+    },
+    {
+        "label": "ClientViewSet",
+        "kind": 6,
+        "importPath": "apps.client.api.views.client_viewset",
+        "description": "apps.client.api.views.client_viewset",
+        "peekOfCode": "class ClientViewSet(viewsets.GenericViewSet):\n    serializer_class = List_ClientSerializer\n    def get_queryset(self,pk = None):\n        if pk is not None:\n            return self.serializer_class.Meta.model.objects.filter(id=pk).first()\n        return self.serializer_class.Meta.model.objects.all().values('id','first_name','last_name','username','email')\n    # client list\n    def list(self,request, *args, **kargs):\n        user = self.get_queryset()\n        if user is not None:",
+        "detail": "apps.client.api.views.client_viewset",
+        "documentation": {}
+    },
+    {
+        "label": "list_plants_api_view",
+        "kind": 2,
+        "importPath": "apps.client.api.views.plants_views",
+        "description": "apps.client.api.views.plants_views",
+        "peekOfCode": "def list_plants_api_view(request):\n    if request.method == 'GET':\n        plants,status_code = list_plants()\n        if status_code == 200:\n            return Response(plants, status= status.HTTP_200_OK)\n        else:\n            return Response(plants,status=status.HTTP_404_NOT_FOUND)\n# plant detail \n@api_view(['GET'])\ndef view_plant_api_view(request,pk=None):",
+        "detail": "apps.client.api.views.plants_views",
+        "documentation": {}
+    },
+    {
+        "label": "view_plant_api_view",
+        "kind": 2,
+        "importPath": "apps.client.api.views.plants_views",
+        "description": "apps.client.api.views.plants_views",
+        "peekOfCode": "def view_plant_api_view(request,pk=None):\n    if request.method == 'GET':\n        plant,status_code = detail_plant(pk)\n        if status_code == 200:\n            return Response(plant, status= status.HTTP_200_OK)\n        else:\n            return Response(plant,status=status.HTTP_404_NOT_FOUND)",
+        "detail": "apps.client.api.views.plants_views",
         "documentation": {}
     },
     {
         "label": "list_client_api_view",
         "kind": 2,
-        "importPath": "apps.client.api.views.client_views",
-        "description": "apps.client.api.views.client_views",
+        "importPath": "apps.client.api.views.register_views",
+        "description": "apps.client.api.views.register_views",
         "peekOfCode": "def list_client_api_view(request):\n    # list\n    if request.method == 'GET':\n        user = User.objects.all().values('id', 'first_name' ,'last_name' ,'username','email','password')\n        if user.exists():\n            user_serializer = List_ClientSerializer(user, many = True)\n            return Response(user_serializer.data, status= status.HTTP_200_OK)\n        return Response({'message':\"Clients don't exist\"},status=status.HTTP_404_NOT_FOUND)\n@api_view(['POST'])\ndef create_client_api_view(request):   ",
-        "detail": "apps.client.api.views.client_views",
+        "detail": "apps.client.api.views.register_views",
         "documentation": {}
     },
     {
         "label": "create_client_api_view",
         "kind": 2,
-        "importPath": "apps.client.api.views.client_views",
-        "description": "apps.client.api.views.client_views",
+        "importPath": "apps.client.api.views.register_views",
+        "description": "apps.client.api.views.register_views",
         "peekOfCode": "def create_client_api_view(request):   \n    # create\n    if request.method == 'POST':\n        user_serializer = Create_ClientSerializer(data = request.data)\n        if user_serializer.is_valid():\n            user_serializer.save()\n            return Response({'message':'Successful registration'}, status= status.HTTP_201_CREATED)\n        return Response(user_serializer.errors, status = status.HTTP_400_BAD_REQUEST)",
-        "detail": "apps.client.api.views.client_views",
+        "detail": "apps.client.api.views.register_views",
         "documentation": {}
     },
     {
-        "label": "PlantsViewSet",
-        "kind": 6,
-        "importPath": "apps.client.api.views.plants_viewset",
-        "description": "apps.client.api.views.plants_viewset",
-        "peekOfCode": "class PlantsViewSet(viewsets.GenericViewSet):\n    pass",
-        "detail": "apps.client.api.views.plants_viewset",
+        "label": "router",
+        "kind": 5,
+        "importPath": "apps.client.api.routers",
+        "description": "apps.client.api.routers",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'client',ClientViewSet, basename = 'client')\nrouter.register(r'my_car',CarViewSet, basename = 'my_car')\nurlpatterns = router.urls",
+        "detail": "apps.client.api.routers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "apps.client.api.routers",
+        "description": "apps.client.api.routers",
+        "peekOfCode": "urlpatterns = router.urls",
+        "detail": "apps.client.api.routers",
         "documentation": {}
     },
     {
@@ -283,7 +601,7 @@
         "kind": 5,
         "importPath": "apps.client.api.urls",
         "description": "apps.client.api.urls",
-        "peekOfCode": "urlpatterns = [\n    path('clients/', list_client_api_view, name = 'clients' ),\n    path('register/', create_client_api_view, name ='register'),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('register/', create_client_api_view, name ='register'),\n    path('plants/', list_plants_api_view, name ='plants'),\n    path('plants/<int:pk>/', view_plant_api_view, name ='plant_retrieve')\n]",
         "detail": "apps.client.api.urls",
         "documentation": {}
     },
@@ -294,6 +612,15 @@
         "description": "apps.client.migrations.0001_initial",
         "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('password', models.CharField(max_length=128, verbose_name='password')),",
         "detail": "apps.client.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Car",
+        "kind": 6,
+        "importPath": "apps.client.shopi_cart.cart",
+        "description": "apps.client.shopi_cart.cart",
+        "peekOfCode": "class Car:\n    def __init__(self,request):\n        self.request = request\n        self.session = request.session\n        car = self.session.get(settings.CARRO_SESSION_ID)\n        if not car:\n            car = self.session[settings.CARRO_SESSION_ID]={}\n        self.car=car\n    def add(self,request, plant):\n        if str(plant['id']) not in self.car.keys():",
+        "detail": "apps.client.shopi_cart.cart",
         "documentation": {}
     },
     {
@@ -427,7 +754,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -436,7 +763,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -445,7 +772,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -454,7 +781,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "USE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_TZ = True\nAUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -463,7 +790,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "AUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "AUTH_USER_MODEL = 'client.User'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -472,7 +799,16 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.settings.base",
         "description": "shopi_cactus_client.settings.base",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nCARRO_SESSION_ID = 'car'",
+        "detail": "shopi_cactus_client.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "CARRO_SESSION_ID",
+        "kind": 5,
+        "importPath": "shopi_cactus_client.settings.base",
+        "description": "shopi_cactus_client.settings.base",
+        "peekOfCode": "CARRO_SESSION_ID = 'car'",
         "detail": "shopi_cactus_client.settings.base",
         "documentation": {}
     },
@@ -562,7 +898,7 @@
         "kind": 5,
         "importPath": "shopi_cactus_client.urls",
         "description": "shopi_cactus_client.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('clients/', include('apps.client.api.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('clients/', include('apps.client.api.urls')),\n    path('client_detail/', include('apps.client.api.routers')),\n]",
         "detail": "shopi_cactus_client.urls",
         "documentation": {}
     },
