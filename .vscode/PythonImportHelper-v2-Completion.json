@@ -185,6 +185,22 @@
         "documentation": {}
     },
     {
+        "label": "created_order",
+        "importPath": "apps.client.api.views.requests.order_requests",
+        "description": "apps.client.api.views.requests.order_requests",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.requests.order_requests",
+        "documentation": {}
+    },
+    {
+        "label": "created_items_order",
+        "importPath": "apps.client.api.views.requests.order_requests",
+        "description": "apps.client.api.views.requests.order_requests",
+        "isExtraImport": true,
+        "detail": "apps.client.api.views.requests.order_requests",
+        "documentation": {}
+    },
+    {
         "label": "List_ClientSerializer",
         "importPath": "apps.client.api.serializers.client_serializers",
         "description": "apps.client.api.serializers.client_serializers",
@@ -480,6 +496,24 @@
         "documentation": {}
     },
     {
+        "label": "created_order",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.order_requests",
+        "description": "apps.client.api.views.requests.order_requests",
+        "peekOfCode": "def created_order(id,cost,items):\n    url = 'https://shopi-plants-admin.onrender.com/create_order/order/'\n    response = requests.post(url, data={'user_id': [str(id)],'cost':[cost],'items':[items.values()]})\n    data = response.json()\n    if response.status_code == 201:\n        return data,response.status_code\n    else:\n        return data,response.status_code\ndef created_items_order(plant_id,order,cost,qty):\n    url = 'https://shopi-plants-admin.onrender.com/create_order/items_order/'",
+        "detail": "apps.client.api.views.requests.order_requests",
+        "documentation": {}
+    },
+    {
+        "label": "created_items_order",
+        "kind": 2,
+        "importPath": "apps.client.api.views.requests.order_requests",
+        "description": "apps.client.api.views.requests.order_requests",
+        "peekOfCode": "def created_items_order(plant_id,order,cost,qty):\n    url = 'https://shopi-plants-admin.onrender.com/create_order/items_order/'\n    response =requests.post(url, data={'plant': [plant_id],'order':[order],'cost':[cost],'qty':[qty]})\n    data = response.json()\n    if response.status_code == 201:\n        return data,response.status_code\n    else:\n        return data,response.status_code",
+        "detail": "apps.client.api.views.requests.order_requests",
+        "documentation": {}
+    },
+    {
         "label": "url_image",
         "kind": 2,
         "importPath": "apps.client.api.views.requests.plants_requests",
@@ -529,7 +563,7 @@
         "kind": 6,
         "importPath": "apps.client.api.views.cart_viewset",
         "description": "apps.client.api.views.cart_viewset",
-        "peekOfCode": "class CarViewSet(viewsets.GenericViewSet):\n    # detail car\n    def list(self,request,*args,**kargs):\n        car = Car(request)\n        if car:\n            return Response({'order_items':car.car.values(),'qty_plants':car.qty_plants(self),'cost_car':car.cost_car(self)},status=status.HTTP_200_OK)\n        return Response({'order_items':[]},status=status.HTTP_200_OK)\n    @action(detail = False, methods = ['get'])\n    def add_car(self,request):\n        car = Car(request)",
+        "peekOfCode": "class CarViewSet(viewsets.GenericViewSet):\n    # detail car\n    def list(self,request,*args,**kargs):\n        car = Car(request)\n        if car:\n            return Response({'order_items':car.car.values(),'qty_plants':car.qty_plants(self),'cost_car':car.cost_car(self)},status=status.HTTP_200_OK)\n        return Response({'order_items':[]},status=status.HTTP_200_OK)\n    # add car\n    @action(detail = False, methods = ['get'])\n    def add_car(self,request):",
         "detail": "apps.client.api.views.cart_viewset",
         "documentation": {}
     },

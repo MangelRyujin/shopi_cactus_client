@@ -56,7 +56,7 @@ class Car:
                     self.save()
                 break
             else:
-                print('El producto no existe en el carrito')
+                pass
         
     def clear(self):
         self.session[settings.CARRO_SESSION_ID]={}
@@ -76,23 +76,3 @@ class Car:
         for value in self.car.values():
             cost+= value['cost']
         return cost
-    
-    
-    
-    
-    # if str(plant.id) not in self.car.keys():
-            
-    #         self.car[plant.id] = {
-    #             "plant_id": plant.id,
-    #             "plant_name":plant.name,
-    #             "qty": 1,
-    #             "cost": round(float(plant.cost),2),
-    #             "image":plant.image.url if plant.image != '' else '',
-    #         }
-    #     else:
-    #         for key, value in self.car.items():
-    #             if key == str(plant.id):
-    #                 value["qty"] = value["qty"]+1
-    #                 value["cost"] = round(float(plant.cost) * value["qty"],2)
-    #                 break
-    #     self.save()
